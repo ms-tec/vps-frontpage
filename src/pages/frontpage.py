@@ -37,4 +37,7 @@ def show_frontpage():
                             a("MDN Web Docs", href="https://developer.mozilla.org/en-US/")
                             p("Mozilla Foundation har lavet nogle virkelig gode sider med dokumentation og tutorials for alt hvad der har med HTML, CSS, og JavaScript at gøre. Dem finder du på ovenstående link.")
 
+                h3("Elevsider")
+                p("Her vil man senere kunne finde links til hjemmesider, som eleverne har lavet.")
+
     return doc.render()
