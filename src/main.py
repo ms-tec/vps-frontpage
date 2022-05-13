@@ -17,4 +17,5 @@ async def frontpage(request):
 
     return sanic.response.html(doc.render())
 
-app.run('localhost', 8080)
+if __name__ == "__main__":
+    app.run('localhost', 8080)
