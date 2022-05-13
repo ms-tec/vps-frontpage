@@ -36,6 +36,9 @@ def show_frontpage():
                         with li():
                             a("MDN Web Docs", href="https://developer.mozilla.org/en-US/")
                             p("Mozilla Foundation har lavet nogle virkelig gode sider med dokumentation og tutorials for alt hvad der har med HTML, CSS, og JavaScript at gøre. Dem finder du på ovenstående link.")
+                        with li():
+                            a("jsfiddle", href="https://jsfiddle.net/")
+                            p("På jsfiddle kan man hurtigt og nemt eksperimentere med HTML, CSS, og JavaScript. Nyttigt til at undersøge hvordan man får et lille element på sin hjemmeside til at se rigtigt ud, inden man integrerer det i resten af koden.")
 
                 h3("Elevsider")
                 p("Her vil man senere kunne finde links til hjemmesider, som eleverne har lavet.")
