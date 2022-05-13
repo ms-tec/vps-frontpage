@@ -1,21 +1,13 @@
 import sanic
-import dominate
-from dominate.tags import *
+
+from pages.frontpage import show_frontpage
 
 app = sanic.Sanic("TestApp")
 app.config.FORWARED_SECRET = "CookiesAreGreat"
 
 @app.get("/")
 async def frontpage(request):
-    doc = dominate.document(title='Velkommen')
-
-    with doc.head:
-        link(rel="stylesheet", href="style.css")
-
-    with doc:
-        h1("Hello, world!")
-
-    return sanic.response.html(doc.render())
+    return sanic.response.html(show_frontpage())
 
 if __name__ == "__main__":
     app.run('localhost', 8080)
