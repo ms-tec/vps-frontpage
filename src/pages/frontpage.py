@@ -10,7 +10,7 @@ def show_frontpage():
     with doc:
         with div(cls="contents"):
             with div(cls="header"):
-                h1("Programmering B")
+                h1("Programmering")
                 h2("H.C. Ørsted Gymnasium, Frederiksberg")
             with div(cls="body"):
                 p("Velkommen til hjemmesiden for programmeringsklasserne på H.C. Ørsted Gymnasium, Frederiksberg.")
@@ -27,6 +27,9 @@ def show_frontpage():
                         with li():
                             a("Sanic dokumentation", href="https://sanic.dev/en/guide/getting-started.html")
                             p("Sanic er et web-framework til Python, som vi bruger i programmeringstimerne når vi arbejder med web-udvikling. På ovenstående link finder du den officielle dokumentation.")
+                        with li():
+                            a("Dear PyGui dokumentation", href="https://dearpygui.readthedocs.io/en/latest/")
+                            p("Dear PyGui er et moderne GUI-framework til Python, som vi bruger når vi gerne vil lave desktop-programmer.")
                         with li():
                             a("Dominate", href="https://github.com/Knio/dominate")
                             p("Dominate er et Python-bibliotek, som gør det nemt at konstruere HTML-sider. På ovenstående link findes dokumentation og eksempler.")
